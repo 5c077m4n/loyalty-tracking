@@ -1,0 +1,26 @@
+<footer>
+	<mat-toolbar>
+		<mat-toolbar-row fxLayout="row" fxLayoutAlign="center center">
+			<nav fxShow fxHide.lt-sm>
+				<a mat-button routerLink="home">Home</a>
+				<a mat-button routerLink="about-us">About Us</a>
+				<a mat-button routerLink="deliverables">Deliverables</a>
+				<a mat-button routerLink="customers">Customers</a>
+				<a mat-button routerLink="testimonials">Testimonials</a>
+				<a mat-button routerLink="contact-us">Contact Us</a>
+			</nav>
+			<button mat-button [matMenuTriggerFor]="menu" fxHide fxShow.lt-sm>Navigation</button>
+			<mat-menu #menu="matMenu">
+				<a mat-button fxFill routerLink="home">Home</a>
+				<a mat-button fxFill routerLink="about-us">About Us</a>
+				<a mat-button fxFill routerLink="deliverables">Deliverables</a>
+				<a mat-button fxFill routerLink="customers">Customers</a>
+				<a mat-button fxFill routerLink="testimonials">Testimonials</a>
+				<a mat-button fxFill routerLink="contact-us">Contact Us</a>
+			</mat-menu>
+		</mat-toolbar-row>
+		<mat-toolbar-row>
+			<p class="small-text gray center">2018 - LoyaltyTracking</p>
+		</mat-toolbar-row>
+	</mat-toolbar>
+</footer>

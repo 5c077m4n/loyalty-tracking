@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -39,7 +39,9 @@ import { FooterComponent } from './components/footer/footer.component';
 		FlexLayoutModule,
 		AppStyleModule
 	],
-	providers: [],
+	providers: [
+		Title
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule {}
